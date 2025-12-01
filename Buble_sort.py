@@ -1,10 +1,11 @@
+Fizuli=[2,4,5,1,6,9]
 
-a=[2,11,4,1,8,6,9]
-b=len(a)
-
-
-for i in range(b-1):
-   for j in range(b-1):
-       if a[j]>a[j+1]:
-           a[j],a[j+1]=a[j+1],a[j]
-print(a)
+#sorting elements algorithm for every array
+def Buble_sort(arr):
+   b=len(arr)
+   for i in range(b-1):
+      for j in range(b-1):
+       if arr[j]>arr[j+1]:
+           arr[j],arr[j+1]=arr[j+1],arr[j]
+   print(arr)
+Buble_sort(Fizuli)
